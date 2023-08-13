@@ -1,0 +1,281 @@
+     /* نحفظ  الالوان المستخدمة في الموقع داخل متغيرات  */
+/* ننشئ متغير للبادينج عشان يسهل تغير القيمة حسب  حجم الشاشة*/
+
+:root { 
+    --primaryColor:#1bc5c5;
+   --secondaryColor:#000000;
+   --lightColor:#171a1a;
+   --bgColor-1:#fcffff;
+   --bgColor-2:#7a6b6b;
+   --padding: 8%;
+
+}
+
+
+
+ 
+  /* المسافات واخذ عرض الشاشة */
+ *{ 
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* الخطوط المستخدمة  */
+html{
+    font-family: 'Josefin Sans', sans-serif; 
+    font-size: 16px; 
+    color: var(--lightColor);   
+
+}
+
+h1{ 
+    font-size: 4.65rem;
+    margin: 1.7rem 0;
+}
+ 
+
+h2{
+    font-size: 2.2rem;
+    letter-spacing: 0.12rem;
+    cursor:pointer;           /* يتغير الماوس لشكل ايد لم نوقف عليه */
+                     
+}
+
+
+
+h3{ 
+    font-size: 1.5rem;
+    margin: 3.5rem;
+}
+
+
+h4{ 
+    font-size: 1.25rem;
+    letter-spacing: 0.12rem;
+    color: #005c47;
+} 
+
+h5{ 
+    font-size: 1.37rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+}
+
+
+
+span{ 
+    color: #17d2cc;
+}
+
+
+
+p{ 
+    color: var(--secondaryColor);
+    letter-spacing: 1px;
+    line-height: 1.8rem;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+ 
+/* 1 rem =16 px*/  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* الحجم ولون الخلفية */
+.home{ 
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bgColor-1);
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+
+
+
+
+nav{ 
+    padding-top: 2.8rem;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav ul li{ 
+ list-style-type: none;
+ display: inline-block;
+ margin: 0.8rem 1.5rem;
+
+
+}
+
+
+nav ul li a { 
+    color: var(--lightColor);
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.4s; 
+}
+
+
+nav ul li a:hover{ 
+    color: var(--primaryColor);
+}
+
+
+.btn{ 
+    background-color: var(--primaryColor);
+    color: var(--lightColor);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.81rem 1.87rem;
+    border-radius: 30px ;
+    border: 2px solid transparent;
+
+    transition: 0.4s;
+}
+
+.btn:hover{ 
+    background-color: transparent;
+    border: 2px solid var(--primaryColor);
+}
+
+
+
+.content{ 
+    flex-grow:1 ;
+    padding: 0 var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-texts{ 
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.social { 
+    margin-top:  3.5rem;
+
+}
+
+.social img{ 
+    margin-right: 2rem ;
+    width: 2.5rem;
+    transition: 0.4s;
+}
+
+
+.social img:hover{ 
+    transform: scale(1.2);
+}
+
+
+
+.home.container-images { 
+    width: 25%;
+    height: 50%;
+    position:relative;
+    align-self: flex-end;
+
+}
+
+.home.container-images img { 
+    position: absolute;
+    bottom: 40%;
+   right:  5%;
+
+    height: 100%;
+}
+
+.about{ 
+    background-color:#5d9194;
+    padding: var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+ 
+
+.about .container-images{
+    width: 80%;
+
+ }
+.about .container-images img{
+    width: 90%;
+}
+
+.about.container-texts{ 
+    width: 35%;
+}
+
+
+
+
+.services{ 
+    background-color: var(--bgColor-1);
+    padding: var(--padding);
+
+}
+
+.text-center{ 
+    text-align: center;
+}
+
+
+.box{  
+    display: flex;
+    justify-content: space-between ;
+}
+
+
+.card{ 
+    width: 300px;
+    background-color:var(--primaryColor);
+    border-radius: 20px;
+    padding: 1.3rem 2rem;
+}
+
+
