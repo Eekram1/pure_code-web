@@ -57,13 +57,14 @@ h3{
 h4{ 
     font-size: 1.25rem;
     letter-spacing: 0.12rem;
-    color: #005c47;
+    color: #092733;
 } 
 
 h5{ 
     font-size: 1.37rem;
     margin-bottom: 1.5rem;
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
+    color: #29394d;
 }
 
 
@@ -75,7 +76,9 @@ span{
 
 
 p{ 
-    color: var(--secondaryColor);
+    color: #092733;
+
+    /* color: var(--secondaryColor); */
     letter-spacing: 1px;
     line-height: 1.8rem;
     font-size: 1rem;
@@ -188,7 +191,11 @@ nav ul li a:hover{
 
 
 
+.butoon{
+    margin-top:  3.5rem;
 
+
+}
 
 
 
